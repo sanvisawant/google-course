@@ -29,20 +29,20 @@ session = InMemorySessionService()
 # 4. PIPELINE FUNCTION (Sequential Multi-Agent Flow)
 def run_pipeline(user_input: str):
 
-    print("\n🔍 Step 1: Classifying symptoms...")
+    print("\n Step 1: Classifying symptoms...")
     classified = symptom_classifier_agent.run_llm(user_message=user_input)
     symptoms = classified.output.get("symptoms", [])
     print("Symptoms →", symptoms)
 
-    print("\n🌍 Step 2: Asking city for outbreak search")
+    print("\n Step 2: Asking city for outbreak search")
     city = input("Enter your city: ")
 
-    print("\n📢 Step 3: Fetching outbreak info...")
+    print("\n Step 3: Fetching outbreak info...")
     outbreak = outbreak_agent.run_llm(city=city)
     outbreak_info = outbreak.output.get("outbreak_info", [])
     print("Outbreak info →", outbreak_info)
 
-    print("\n💡 Step 4: Awareness generation...")
+    print("\n Step 4: Awareness generation...")
     awareness = awareness_agent.run_llm(
         symptoms=symptoms,
         outbreak_info=outbreak_info
@@ -51,7 +51,7 @@ def run_pipeline(user_input: str):
     print("\n=== FINAL AWARENESS MESSAGE ===")
     print(final_response)
 
-    print("\n📝 Step 5: Evaluating system output...")
+    print("\n Step 5: Evaluating system output...")
     evaluation = evaluation_agent.run_llm(
         user_query=user_input,
         agent_response=final_response
@@ -62,7 +62,7 @@ def run_pipeline(user_input: str):
 
 # 5. START PROGRAM
 if __name__ == "__main__":
-    print("\n🤖 Health Awareness Multi-Agent System")
+    print("\n Disease Awareness Multi-Agent")
     user_msg = input("\nDescribe your symptoms: ")
 
     run_pipeline(user_msg)
