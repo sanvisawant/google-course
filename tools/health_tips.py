@@ -13,6 +13,6 @@ def health_tips(symptoms: list[str]) -> dict:
     """
     return  {
             "status": "need-search",
-            "query": "general health tips for symptoms - site:cdc.gov OR site:who.int "
+            "query": "general health tips for symptoms - site:mayoclinic.org OR site:who.int OR my.clevelandclinic.org "
         }          
    
