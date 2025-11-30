@@ -53,4 +53,5 @@ Each agent is implemented as an LlmAgent in ADK.
 **Conclusion:**
 This project showcases how Gemini-powered, tool-augmented multi-agent systems can be used for socially beneficial applications such as public health awareness.
 By integrating sequential agents, Google Search tools, in-memory session state, and evaluation frameworks, the system demonstrates the practical application of modern LLM architectures using Google ADK.
+The system is designed to inform, not diagnose, helping users become aware—and prepared—regarding symptoms and local disease activity.
 
