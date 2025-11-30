@@ -40,6 +40,8 @@ Below is the behavioral flow of the system:
 User → Symptom Classifier Agent → Outbreak Agent → Awareness Agent → Evaluation Agent → Final Answer
 
 **Architecture Diagram**:
+<img width="3456" height="2124" alt="architecture workflow1" src="https://github.com/user-attachments/assets/670877c8-d22c-46ff-9518-d2b9ca4507d3" />
+
 
 **Agents Used**:
 1. Symptoms Classifier Agent : Clean, normalize and categorize symptoms
