@@ -4,14 +4,14 @@ The lack of awareness about diseases around us can lead to delayed action and mi
 This project addresses that gap by providing an awareness agent that:
 - Helps users understand possible diseases based on their symptoms
 - Checks if there is an outbreak in their city
-- Suggests basic home remedies for mild symptoms
+- Suggests basic home remedies for mild symptoms<br>
 ⚠️ Disclaimer: This system is intended for awareness and educational purposes only. It does not provide any type of Medical Diagnosis.
 
 **Solution:**
 This project implements a Disease Awareness Agent designed to help users understand potential health risks based on their input symptoms.
 - 🩺 Symptom Analysis: The agent takes user-provided symptoms and suggests possible diseases.
 - 🌍 Outbreak Detection: It checks whether there is an ongoing outbreak in the user’s city, providing timely awareness.
-- 🏠 Home Remedies: Alongside disease information, the agent offers simple, general home remedy tips to help users manage mild symptoms.
+- 🏠 Home Remedies: Alongside disease information, the agent offers simple, general home remedy tips to help users manage mild symptoms.<br>
 The goal is to increase public health awareness by combining symptom-based guidance, outbreak monitoring, and practical advice in one system using relevant and trusted resources only.
 
 **Project Architecture**:
@@ -26,7 +26,7 @@ This project demonstrates the major concepts taught in the course:
 6. ADK Runner Execution
 7. LLM-powered agents
 8. Context engineering
-9. Automated Evaluation Agent
+9. Automated Evaluation Agent<br>
 The goal is to build a safe, informative health assistant that provides:
 -Symptom awareness
 -General precautions
@@ -45,7 +45,7 @@ User → Symptom Classifier Agent → Outbreak Agent → Awareness Agent → Eva
 1. Symptoms Classifier Agent : Clean, normalize and categorize symptoms
 2. Outbreak Agent : Ask user city → Google Search → extract disease alerts
 3. Awareness Agent : Generate awareness, home remedies, precautions
-4. Evaluation Agent : Evaluate correctness, safety & completeness
+4. Evaluation Agent : Evaluate correctness, safety & completeness<br>
 Each agent is implemented as an LlmAgent in ADK.
 
 **Conclusion:**
