@@ -12,5 +12,5 @@ def fetch_outbreak_info_from_google(city: str) -> Dict[str, Any]:
     """
     return {
         "status": "need-search",
-        "query": f"recent disease outbreaks in {city} site:gov OR site:who.int OR site:mohfw.gov.in"
+        "query": f"recent disease outbreaks in {city} site:who.int OR cdc.gov OR ncdc.mohfw.gov.in"
     }
